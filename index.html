@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+
+   
+    <script>
+        var distancia;
+        document.write("De 0 a 999 mt de distancia recorrida ir a pie.");
+        document.write("<br> ");
+        document.write("De 1.000 a 9.999 mt de distancia recorrida ir en bicicleta.");
+        document.write("<br> ");
+
+
+        document.write("De 10.000 a 29.999 mt de distancia recorrida ir en colectivo.");
+        document.write("<br> ");
+
+        document.write("De 30.000 a 99.999 mt de distancia recorrida ir en aut.");
+        document.write("<br> ");
+
+        document.write("Más de 100.000 mt de distancia recorrida ir en avión.");
+        document.write("<br> "); document.write("<br> ");
+
+
+        distancia = prompt("ingrese la distancia en metros que debe recorrer : ", '');
+        // document.write(distancia+ " mt de distancia recorrida");
+        if (distancia < 1000) {
+            document.write(distancia + " mt de distancia recorrida, vaya a pie.");
+
+        } else if (distancia >= 1000 && distancia < 10000) {
+            document.write(distancia + " mt de distancia recorrida, vaya en bicicleta.");
+
+        } else if (distancia >= 10000 && distancia < 30000) {
+            document.write(distancia + " mt de distancia recorrida, tome un colectivo.");
+
+        } else if (distancia >= 30000 && distancia < 100000) {
+            document.write(distancia + " mt de distancia recorrida, vaya en auto. ");
+
+        } else {
+            document.write(distancia + " mt de distancia recorrida, tome un avión");
+
+        }
+         </script>
+         <br><br><br>
+          <a href="array.html">A ejercicio 2</a>
+</body>
+
+</html>
